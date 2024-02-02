@@ -1,0 +1,30 @@
+data:
+  #allowedHosts:
+    #hosts:
+      #- TODO # Please change to the hostname of the source.
+  registries:
+    oss:
+      enabled: true
+    cloud:
+      enabled: true
+  connectorBuildOptions:
+    # Please update to the latest version of the connector base image.
+    # Please use the full address with sha256 hash to guarantee build reproducibility.
+    # https://hub.docker.com/r/airbyte/python-connector-base
+    baseImage: docker.io/airbyte/python-connector-base:1.0.0@sha256:dd17e347fbda94f7c3abff539be298a65af2d7fc27a307d89297df1081a45c27
+  connectorSubtype: database
+  connectorType: destination
+  definitionId: b1da1109-21e6-43a6-8f1f-44451809ed6a
+  dockerImageTag: 0.1.0
+  dockerRepository: airbyte/destination-kapiche-email-cleaning-s3
+  githubIssueLabel: destination-kapiche-email-cleaning-s3
+  icon: kapiche-email-cleaning-s3.svg
+  license: MIT
+  name: Kapiche Email Cleaning S3
+  #releaseDate: TODO
+  releaseStage: alpha
+  supportLevel: community
+  documentationUrl: https://docs.airbyte.com/integrations/destinations/kapiche-email-cleaning-s3
+  tags:
+    - language:python
+metadataSpecVersion: "1.0"
